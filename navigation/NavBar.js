@@ -1,20 +1,18 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 // Screens
-import HomeScreen from '../screens/HomeScreen';
-import DetailsScreen from '../screens/DetailsScreen';
-import SettingsScreen from '../screens/SettingsScreen';
+import HomeScreen from './screens/HomeScreen';
+import DetailsScreen from './screens/DetailsScreen';
+import SettingsScreen from './screens/SettingsScreen';
 
 //Screen names
 const homeName = "Home";
 const detailsName = "Details";
 const settingsName = "Settings";
 
-//const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 
 function NavBar() {
