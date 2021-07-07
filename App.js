@@ -1,9 +1,9 @@
 import * as React from 'react';
-import NavBar from './navigation/NavBar';
+import MainContainer from './navigation/MainContainer';
 
 function App() {
   return (
-    <NavBar/>
+    <MainContainer/>
   );
 }
 

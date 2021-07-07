@@ -15,7 +15,7 @@ const settingsName = "Settings";
 
 const Tab = createBottomTabNavigator();
 
-function NavBar() {
+function MainContainer() {
   return (
     <NavigationContainer>
       <Tab.Navigator
@@ -55,4 +55,4 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+export default MainContainer;
