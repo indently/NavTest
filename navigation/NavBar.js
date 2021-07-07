@@ -6,19 +6,18 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 
 // Screens
 import HomeScreen from '../screens/HomeScreen';
-import DetailsScreen from '../Screens/DetailsScreen';
-import SettingsScreen from '../Screens/SettingsScreen';
+import DetailsScreen from '../screens/DetailsScreen';
+import SettingsScreen from '../screens/SettingsScreen';
 
 //Screen names
 const homeName = "Home";
 const detailsName = "Details";
 const settingsName = "Settings";
 
-
 //const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 
-function NavBar({ home, details, settings }) {
+function NavBar() {
   return (
     <NavigationContainer>
       <Tab.Navigator
@@ -43,7 +42,7 @@ function NavBar({ home, details, settings }) {
           },
         })}
         tabBarOptions={{
-          activeTintColor: '#555',
+          activeTintColor: 'tomato',
           inactiveTintColor: 'grey',
           labelStyle: { paddingBottom: 10, fontSize: 10 },
           style: { padding: 10, height: 70}
